@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+  font-family: "Sansita Swashed", cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.center {
+        
+  /* background: #fff; */
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center; /* Center-align the content inside .center */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center  input {
+  width: 50%;
+  border: 2px solid #000;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: none;
+  font-size: 1.2em;
+  margin: 5px ; /* Add vertical margin between input fields */
+} 
+.center input [type="button"]{
+  width: 80%;
+  background: dodgerblue;
+  color: #fff;
+  border: none;
+  margin: 10px 0;
 }
+
+.center form input[type="button"],
+    .center form input[type="submit"],
+    .center form input[type="reset"]  {
+      display: inline-block; /* Change display property */
+  width: auto; /* Let the width adjust to the content */
+  background: dodgerblue;
+  color: #fff;
+  border: none;
+  margin: 10px 10px 10px 0; /* Add vertical margin between buttons */
+    }
+
+    .center form input:hover[type="button"],
+    .center form input:hover[type="submit"] {
+      background: linear-gradient(45deg, greenyellow, dodgerblue);
+    }
+    table {
+      width: 100%; /* Make the table take the full width of its container */
+      border: 2px dashed black;
+      border-radius: 1px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 2px solid black;
+      border-style: dashed;
+      border-radius: 1px;
+      padding: 10px;
+    }
